@@ -5,6 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^3.2.0",
+    "extract-css-chunks-webpack-plugin": "^4.6.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6"

@@ -1,6 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import styles from './styles.css';
 
-const demoDOM = document.createElement('div');
-demoDOM.innerHTML = 'I am a Demo DOM';
-demoDOM.className = styles['a-component'];
-document.body.appendChild(demoDOM);
+const DemoDOM = React.createElement(
+    'div',
+    { className: styles['a-component'] },
+    'I am a Demo DOM'
+);
+
+ReactDOM.render(DemoDOM, document.getElementById('root'));

@@ -45,17 +45,19 @@
 2. in your js file, you can get unique class name by `style[originalName]`
 3. style-loader add style sheet into `<head>` during runtime
 
-## One common problem when handling css in js
-server side rendering(SSR)
+## extract css
+pros:
+    - parallel loading of CSS/JS resources
 
-for example, if you render the bundle on server side, it wouldn't work.
-since `style-loader` utilizes browser-only api.
+    - if you bundle is run/rendered on the server side, it wouldn't work.
+    since `style-loader` utilizes browser-only api.
 
 ## Other things to handle
+- **server side rendering(SSR)** Later!!!
+
+below are not in the scope of this talk, basically with right plugin and config, not a big problem
 - hot reload(for better development experience)
 - code splitting
-
-not in the scope of this talk, basically with right plugin and config, not a big problem
 
 ## CSS module is lacking
 counter intuitive compose api

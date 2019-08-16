@@ -1,4 +1,13 @@
+@value v-primary: #BF4040;
+@value m-large: (min-width: 960px);
+
 .a-component {
-    color: blue;
+    color: v-primary;
     composes: base from './base.css';
+}
+
+@media m-large {
+    .a-component {
+        font-size: 60px;
+    }
 }

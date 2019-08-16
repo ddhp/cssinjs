@@ -1,3 +1,4 @@
 .a-component {
     color: blue;
+    composes: base from './base.css';
 }

@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     entry: {
-        main: './index.js',
+        vanilla: './vanilla/index.js',
         emotion: './emotion/index.js',
         jss: './jss/index.js',
     },

@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         main: './index.js',
         emotion: './emotion/index.js',
+        jss: './jss/index.js',
     },
     plugins: [
         new MiniCssExtractPlugin(),

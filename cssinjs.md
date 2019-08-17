@@ -59,13 +59,22 @@ pros:
 **extract branch**
 
 
-## For React & other rendering library
+## Use it with modern render libraries
+React for example,
+Why would you need `styled-components` or other css frameworks?
+
 
 ## CSS module is lacking
-counter intuitive compose api
+- compose class(base button/form group): counter intuitive api
+- variable(define breakpoints): only available in current file
 
+> css-loader transpiles css file, exports a map of class names
+> how to define your style sheet is still highly depends on the css language itself(or depends on which preprocessor you use)
 
 ## JS solutions
+for javascript developers, compose(extend) and define variable are very intuitive.
+So why not describe your style inside js files?
+
 - styled-component
 - react mui
 

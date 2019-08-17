@@ -4,6 +4,7 @@ module.exports = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     entry: {
         main: './index.js',
+        emotion: './emotion/index.js',
     },
     plugins: [
         new MiniCssExtractPlugin(),

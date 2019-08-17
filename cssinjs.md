@@ -75,8 +75,24 @@ Why would you need `styled-components` or other css frameworks?
 for javascript developers, compose(extend) and define variable are very intuitive.
 So why not describe your style inside js files?
 
-- styled-component
-- react mui
+## JS solutions 2
+- stylis -> emotion -> styled-components
+- jss -> react material ui
+
+## stylis & emotion
+Stylis is a light weight css preprocessor, transpiles template string into css string with given selector
+
+Emotion, utilizes stylis for transpilation,, it's `css` package is aimming to be used in vanilla js
+
+**emotion branch**
+
+## styled-components
+emotion's `core` package adopts react ecosystem(jsx) with the support from `babel` transpilation
+
+a more famous framework is `styled-components`
+https://medium.com/styled-components/how-styled-components-works-618a69970421
+does a lot of thing under the hood, including utilize `@emotion/stylis` to transpile template string
+generate unique class names and append
 
 ## After modulized
 - define global style
@@ -100,3 +116,9 @@ below are not in the scope of this talk, basically with right plugin and config,
     - import other style: es6 module system
     - variable: use variable in js is very intuitive
     - vendor prefix:
+
+## Knowing what's your needs first
+- vanilla/easiest way: vanilla css
+- hate naming convention: css-module(css-loader) / emotion.css / jss
+- more versatile: emotion.core / react mui / styled-components
+- need interpolation

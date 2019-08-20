@@ -1,7 +1,8 @@
 import { css } from 'emotion';
 
-const app = document.getElementById('root');
 const myClassName = css`
   color: hotpink;
 `;
+
+const app = document.getElementById('root');
 app.classList.add(myClassName);

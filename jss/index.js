@@ -5,7 +5,7 @@ import preset from 'jss-preset-default';
 jss.setup(preset());
 
 const styles = {
-  'root': {
+  root: {
     color: 'hotpink',
   },
 };

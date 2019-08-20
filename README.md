@@ -137,7 +137,7 @@ const clickCb = (e) => {
 }
 ```
 
-## styled-components
+## @emotion.core & styled-components
 emotion's `core` package adopts react ecosystem(jsx) with the support from `babel`(transpiles React.createElement to its own jsx function)
 `styled` package has very similiar api as styled-components
 
@@ -157,9 +157,9 @@ speak of attaching style, let's take a look at some dynamic scenarios
 ## Global style
 - set style for body, e.g: opening a modal
 
-- emotion / styled-components: an extra component `GlobalStyleComponent` is needed
+- emotion / styled-components: an extra component for [global style](https://emotion.sh/docs/globals) is needed
 
-- JSS: use keyword `global` with limitation: the global style applies when component is rendered, and vise versa
+- JSS: use keyword `global`
 ```
 '@global': {
     body: {
@@ -246,6 +246,15 @@ render(
 - app scale is relatively small: vanilla css
 - hate naming convention: css-module(css-loader)
 - comprehensive capability with some drawbacks: emotion / styled-components / react material-ui
+
+
+## A different approach
+~~originally designed to be global namespaced~~
+lit-element: custom element embracing ShadyCss, which is already scoped.
+
+
+## Thank you
+Q & A
 
 ## Use it with modern render libraries
 React for example,
